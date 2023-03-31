@@ -3,6 +3,7 @@ import Statistics from './Statistics';
 import Section from './Section';
 import FeedbackOptions from './FeedbackOptions';
 import Notification from './Notification';
+import PropTypes from 'prop-types';
 
 class App extends Component {
   state = {
@@ -59,3 +60,11 @@ class App extends Component {
 }
 
 export default App;
+
+App.propTypes = {
+  good: PropTypes.string,
+  neutral: PropTypes.string,
+  bad: PropTypes.string,
+  total: PropTypes.string,
+  positiveFeedbackPercentage: PropTypes.string,
+};

@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const FeedbackOptions = ({ options }) => {
   return (
     <div>
@@ -9,3 +11,7 @@ const FeedbackOptions = ({ options }) => {
 };
 
 export default FeedbackOptions;
+
+FeedbackOptions.propTypes = {
+  options: PropTypes.func,
+};
